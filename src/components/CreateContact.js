@@ -17,7 +17,7 @@ const CreateContact = () => {
 
     const store = async (e) => {
         e.preventDefault();
-        await axios.post(endpoint, {name: name, email: email, phone: phone, message: usr_message});
+        await axios.post(endpoint, {name: name, email: email, phone: phone, usr_message: usr_message});
         navigate('/');
         console.log(store)
     }

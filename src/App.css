@@ -116,6 +116,13 @@ button.btn.btn-primary:hover {
 
 }
 
+.slider-caption .header-3 {
+  font-size: 30px;
+}
+.slider-caption .slider-text {
+  font-size: 18px;
+}
+
 .faq {
  margin: 0;
  padding: 0;

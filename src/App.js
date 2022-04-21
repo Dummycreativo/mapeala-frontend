@@ -61,7 +61,7 @@ function App() {
     <Col className='col-logo'> 
     <img className='logo-mapeala' src={logo} alt="Mapela" />
     </Col>
-    <Col className='col-texto'>Mapeala Tu App Inmobiliaria: no solo conoces tu proximo hogar, tambien podes conocer tu proxima comunidad, hace click en el mapa y busca a tu criterio. </Col>
+    <Col className='col-texto'>Mapeala Tu App Inmobiliaria: no solo vas a conocer tu próximo hogar, también vas a conocer tu próxima comunidad, hace click en el mapa y encontrá lo que estás buscando. </Col>
   </Row>
 </Container>
 
@@ -69,24 +69,24 @@ function App() {
   <Carousel.Item>
     <img className="d-block w-100" src={slider_1} alt="First slide" />
     <Carousel.Caption>
-      <h3 className='header-3'>First slide label</h3>
-      <p className='slider-text'>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3 className='header-3'>BUENOS AIRES</h3>
+      <p className='slider-text'>Capital Federal // Tigre // Palermo // Escobar // San Pedro Las Cañitas</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img className="d-block w-100" src={slider_2} alt="Second slide" />
 
     <Carousel.Caption>
-      <h3 className='header-3'>Second slide label</h3>
-      <p className='slider-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3 className='header-3'>CENTRO DEL PAÍS</h3>
+      <p className='slider-text'> Villa Carlos Paz //  Villa General Belgrano //  Capilla del Monte // Los Reartes</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img className="d-block w-100" src={slider_3} alt="Third slide" />
 
     <Carousel.Caption>
-      <h3 className='header-3'>Third slide label</h3>
-      <p className='slider-text'>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3 className='header-3'>COSTA ATLÁNTICA</h3>
+      <p className='slider-text'>Mar del Plata // Villa Gesell // Miramar // Necochea  // Puerto Madryn // Pinamar // Monte Hermoso</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
@@ -109,26 +109,18 @@ function App() {
   <div className='slider'>
   <Carousel className='slider-centrado' fade>
   <Carousel.Item>
-      <img className="d-block w-100" src={slider_1} alt="First slide" />
-    <Carousel.Caption>
-      <h3 className='header-3'>First slide label</h3>
-      <p className='slider-text'>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <img className="d-block w-100" src={slider_2} alt="First slide" />
+    <Carousel.Caption className='slider-caption'>
+      <h3 className='header-3'>SAN PEDRO DE LAS CAÑITAS</h3>
+      <p className='slider-text'>Moderna y sólida casa, lote con mucha privacidad, sin vecinos, ideal para descansar</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
       <img className="d-block w-100" src={slider_1} alt="First slide" />
 
-    <Carousel.Caption>
-      <h3 className='header-3'>Second slide label</h3>
-      <p className='slider-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-      <img className="d-block w-100" src={slider_1} alt="First slide" />
-
-    <Carousel.Caption>
-      <h3 className='header-3'>Third slide label</h3>
-      <p className='slider-text'>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    <Carousel.Caption className='slider-caption'>
+      <h3 className='header-3'>VILLA BELGRANO</h3>
+      <p className='slider-text'>Alquiler temporario, completamente equipada.</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
@@ -148,27 +140,22 @@ function App() {
     
     <Accordion className='accordion-faq' defaultActiveKey="0" flush>
   <Accordion.Item eventKey="0">
-    <Accordion.Header>Accordion Item #1</Accordion.Header>
+    <Accordion.Header>¿Qué documentación necesito para comprar un terreno o casa?</Accordion.Header>
     <Accordion.Body>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+    Algunos de los documentos necesarios son: Documento Nacional de Identidad - D.N.I., acta de nacimiento y de matrimonio (si es su caso) y proporcionar sus datos generales.
+
     </Accordion.Body>
   </Accordion.Item>
   <Accordion.Item eventKey="1">
-    <Accordion.Header>Accordion Item #2</Accordion.Header>
+    <Accordion.Header>Si quiero comprar una propiedad, ¿qué gastos me corresponden hacer?</Accordion.Header>
     <Accordion.Body>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+    Es necesario que contemple el costo por la realización de un avalúo fiscal y/o bancario, si es su caso; el certificado de no adeudo de impuesto predial, el impuesto sobre traslación de dominio; derechos de inscripción en el registro público de la propiedad, derechos por la expedición del certificado de libertad de gravámenes posterior al registro de la escritura.
+    </Accordion.Body>
+  </Accordion.Item>
+  <Accordion.Item eventKey="2">
+    <Accordion.Header>¿Qué debo tomar en cuenta para saber si la casa o terreno que estoy comprando tendrá buena plusvalía?</Accordion.Header>
+    <Accordion.Body>
+    Es importante ver las condiciones de la propiedad al adquirirla y la posibilidad de hacer cambios y remodelaciones a futuro. Algunos de los puntos importantes a considerar son la infraestructura y su estado en el que se encuentra, si tiene espacio para continuar construyendo y el entorno que rodea al inmueble, es decir su ubicación como la colonia o el fraccionamiento.
     </Accordion.Body>
   </Accordion.Item>
 </Accordion>
