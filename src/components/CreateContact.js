@@ -11,13 +11,13 @@ const CreateContact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
-    const [message, setMessage] = useState('');
+    const [usr_message, setMessage] = useState('');
 
     const navigate = useNavigate();
 
     const store = async (e) => {
         e.preventDefault();
-        await axios.post(endpoint, {name: name, email: email, phone: phone, message: message});
+        await axios.post(endpoint, {name: name, email: email, phone: phone, message: usr_message});
         navigate('/');
         console.log(store)
     }
@@ -60,7 +60,7 @@ const CreateContact = () => {
                 <div className="mb-3">
                     <label className="form-label">Mensaje</label>
                     <input
-                        value={message}
+                        value={usr_message}
                         onChange={(e)=>setMessage(e.target.value)}
                         type="text"
                         className="form-control"

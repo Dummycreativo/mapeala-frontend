@@ -47,7 +47,7 @@ const ShowContacts = () => {
                         <td>{contact.name}</td>
                         <td>{contact.email}</td>
                         <td>{contact.phone}</td>
-                        <td>{contact.message}</td>
+                        <td>{contact.usr_message}</td>
                         <td>
                             <Link to={`/edit/${contact.id}`} className="btn btn-warning">Edit</Link>
                             <button onClick={()=>deleteContact(contact.id)} className="btn btn-danger">Delete</button>
