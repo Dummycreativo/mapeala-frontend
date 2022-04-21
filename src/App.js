@@ -18,6 +18,13 @@ import slider_3 from './img/slider-3.jpg';
 import FAQ from './img/fondo-mapeala.jpg';
 import Contact from './img/mapeala-contacto.jpg';
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+//importar nuestros componentes
+import ShowContacts from './components/ShowContacts';
+import CreateContact from './components/CreateContact.js';
+import EditContact from './components/EditContact.js';
+
 
 function App() {
   return ( 
@@ -184,7 +191,15 @@ function App() {
   <Container className='c-center'>
   <Row>
     <Col>
-      
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={ <CreateContact/> } />
+          <Route path='/create' element={ <CreateContact/> } />
+          <Route path='/edit/:id' element={ <EditContact/> } />
+        </Routes>
+      </BrowserRouter>      
+    </div>
     </Col>
     <Col>
       <img className='img-contacto' src={Contact} />
