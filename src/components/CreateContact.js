@@ -30,7 +30,7 @@ const CreateContact = () => {
 
         <div class="card-body">
 
-            <form onSubmit={Enviar}>
+            <form onSubmit={store}>
                 <div className="mb-3">
                     <label className="form-label">Nombre Completo</label>
                     <input
