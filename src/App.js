@@ -21,7 +21,6 @@ import Contact from './img/mapeala-contacto.jpg';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //importar nuestros componentes
-import ShowContacts from './components/ShowContacts';
 import CreateContact from './components/CreateContact.js';
 import EditContact from './components/EditContact.js';
 

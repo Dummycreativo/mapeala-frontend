@@ -19,18 +19,14 @@ const CreateContact = () => {
         e.preventDefault();
         await axios.post(endpoint, {name: name, email: email, phone: phone, message: message});
         navigate('/');
+        console.log(store)
     }
   return (
     <div>
 
-        <div class="card-header bg-info"> 
-            <h1>MAPEALA</h1>
-            <h3 class="text-white">FORMULARIO DE CONTACTO</h3> 
-        </div>
-
         <div class="card-body">
 
-            <form onSubmit={Enviar}>
+            <form onSubmit={store}>
                 <div className="mb-3">
                     <label className="form-label">Nombre Completo</label>
                     <input
@@ -72,7 +68,6 @@ const CreateContact = () => {
                 </div>
 
                 <button type="submit" className="btn btn-primary">Enviar</button>
-
             </form>
 
         </div>
