@@ -9,7 +9,7 @@ const EditContact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
-    const [usr_message, setMessage] = useState('');
+    const [message, setMessage] = useState('');
     const navigate = useNavigate();
     const {id} = useParams();
 
@@ -20,7 +20,7 @@ const EditContact = () => {
             name: name,
             email: email,
             phone: phone,
-            message: usr_message
+            message: message
         });
         navigate('/');
     }
@@ -31,7 +31,7 @@ const EditContact = () => {
             setName(response.data.name);
             setEmail(response.data.email);
             setPhone(response.data.phone);
-            setMessage(response.data.usr_message);
+            setMessage(response.data.message);
         }
         getContactById();
         //esLint-disable-next-line react-hooks/exhaustivedeps
@@ -71,7 +71,7 @@ const EditContact = () => {
             <div className="mb-3">
                 <label className="form-label">Message</label>
                 <input
-                    value={usr_message}
+                    value={message}
                     onChange={(e)=>setMessage(e.target.value)}
                     type="text"
                     className="form-control"
