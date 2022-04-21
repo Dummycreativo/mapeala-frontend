@@ -190,7 +190,7 @@ function App() {
   <Container className='c-center'>
   <Row>
     <Col>
-    <div className="App">
+    <div className="formulario">
       <BrowserRouter>
         <Routes>
           <Route path='/' element={ <CreateContact/> } />
@@ -200,7 +200,7 @@ function App() {
       </BrowserRouter>      
     </div>
     </Col>
-    <Col>
+    <Col className='img'>
       <img className='img-contacto' src={Contact} />
     </Col>
   </Row>

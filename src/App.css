@@ -1,31 +1,22 @@
-.App {
-  text-align: center;
+.formulario {
+  text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input.form-control {
+  width: 75%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button.btn.btn-primary {
+  background-color: rgb(31, 219, 157);
+  border-color: rgb(31, 219, 157);
+  font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+button.btn.btn-primary:hover {
+  background-color: white;
+  border: solid 2px rgb(31, 219, 157);
+  color: rgb(31, 219, 157);
 
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -269,6 +260,7 @@ ul li a {
 
   .img-contacto {
     width: 90%;
+    padding-top: 100px;
   }
 
   .col-center {
@@ -346,6 +338,13 @@ ul li a {
 
   .img-contacto {
     width: 90%;
+  }
+  .img {
+    display: none;
+  }
+
+  .formulario {
+    padding-left: 60px;
   }
 
   .col-center {
