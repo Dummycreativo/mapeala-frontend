@@ -15,11 +15,22 @@ const CreateContact = () => {
 
     const navigate = useNavigate();
 
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log(email, name);
+        // clearing the values
+        setName("");
+        setEmail("");
+        setPhone("");
+        setMessage("");
+      } 
+
     const store = async (e) => {
         e.preventDefault();
         await axios.post(endpoint, {name: name, email: email, phone: phone, message: message});
         navigate('/');
         console.log(store) 
+
     }          
     
   return (
@@ -67,7 +78,7 @@ const CreateContact = () => {
                         className="form-control"
                     />
                 </div>
-                <button type="submit" className="btn btn-primary">Enviar</button>
+                <button onClick={handleSubmit} type="submit" className="btn btn-primary">Enviar</button>
             </form>
 
         </div>
