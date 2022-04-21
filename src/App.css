@@ -343,8 +343,11 @@ ul li a {
     display: none;
   }
 
-  .formulario {
+  input.form-control {
     width: 100%;
+  }
+
+  .formulario {
     padding-left: 60px;
   }
 
