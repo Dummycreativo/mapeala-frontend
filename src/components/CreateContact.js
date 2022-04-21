@@ -19,12 +19,7 @@ const CreateContact = () => {
         e.preventDefault();
         await axios.post(endpoint, {name: name, email: email, phone: phone, message: message});
         navigate('/');
-        console.log(name,email,phone,message) 
-            // clearing the values
-            setName("");
-            setEmail("");
-            setPhone("");
-            setMessage("");
+        console.log(store) 
     }          
     
   return (
