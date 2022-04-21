@@ -30,9 +30,9 @@ const CreateContact = () => {
 
         <div class="card-body">
 
-            <form onSubmit={store}>
+            <form onSubmit={Enviar}>
                 <div className="mb-3">
-                    <label className="form-label">Name</label>
+                    <label className="form-label">Nombre Completo</label>
                     <input
                         value={name}
                         onChange={(e)=>setName(e.target.value)}
@@ -52,7 +52,7 @@ const CreateContact = () => {
                 </div>
 
                 <div className="mb-3">
-                    <label className="form-label">Phone</label>
+                    <label className="form-label">Teléfono</label>
                     <input
                         value={phone}
                         onChange={(e)=>setPhone(e.target.value)}
@@ -62,7 +62,7 @@ const CreateContact = () => {
                 </div>
 
                 <div className="mb-3">
-                    <label className="form-label">Message</label>
+                    <label className="form-label">Mensaje</label>
                     <input
                         value={message}
                         onChange={(e)=>setMessage(e.target.value)}
@@ -71,7 +71,7 @@ const CreateContact = () => {
                     />
                 </div>
 
-                <button type="submit" className="btn btn-primary">Store</button>
+                <button type="submit" className="btn btn-primary">Enviar</button>
 
             </form>
 
