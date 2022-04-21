@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 import { useNavigate } from "react-router-dom";
 
-const endpoint = "http://localhost:8000/api/contact";
+const endpoint = "https://porfolio.online/mapeala/api/contact";
 
 
 const CreateContact = () => {

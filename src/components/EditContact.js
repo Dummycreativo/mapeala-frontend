@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 
-const endpoint = "http://localhost:8000/api/contact/";
+const endpoint = "https://porfolio.online/mapeala/api/contact/";
 
 
 const EditContact = () => {
