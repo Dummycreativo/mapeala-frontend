@@ -15,10 +15,10 @@ const CreateContact = () => {
 
     const navigate = useNavigate();
 
+    //Resetear formulario al enviar
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(email, name);
-        // clearing the values
+        console.log(name,email,phone,message);
         setName("");
         setEmail("");
         setPhone("");
