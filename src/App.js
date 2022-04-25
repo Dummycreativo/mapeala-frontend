@@ -1,5 +1,8 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+
+//importar bootstrap
 import'bootstrap/dist/css/bootstrap.min.css' ;
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -7,19 +10,21 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Accordion from 'react-bootstrap/Accordion';
+import Carousel from 'react-bootstrap/Carousel';
+
+//importar imagenes
 import facebook from './img/facebook.svg';
 import instagram from './img/instagram.svg';
 import whatsapp from './img/whatsapp.svg';
 import logo from './img/logo-mapeala-final.png';
-import Carousel from 'react-bootstrap/Carousel';
 import slider_1 from './img/slider-1.jpg';
 import slider_2 from './img/slider-2.jpg';
 import slider_3 from './img/slider-3.jpg';
 import FAQ from './img/fondo-mapeala.jpg';
 import Contact from './img/mapeala-contacto.jpg';
-import './fonts/AbyssinicaSIL-Regular.woff'
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+//importar tipografia
+import './fonts/AbyssinicaSIL-Regular.woff'
 
 //importar nuestros componentes
 import CreateContact from './components/CreateContact.js';

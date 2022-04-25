@@ -59,6 +59,7 @@ function handleSubmit(e) {
                         onChange={(e)=>setName(e.target.value)}
                         type="text"
                         className="form-control"
+                        placeholder="Nombre Completo"
                     />
                 </div>
 
@@ -69,6 +70,7 @@ function handleSubmit(e) {
                         onChange={(e)=>setEmail(e.target.value)}
                         type="text"
                         className="form-control"
+                        placeholder="tuemail@gmail.com"
                     />
                 </div>
 
@@ -79,16 +81,19 @@ function handleSubmit(e) {
                         onChange={(e)=>setPhone(e.target.value)}
                         type="text"
                         className="form-control"
+                        placeholder="Ej: 3516339874"
                     />
                 </div>
 
                 <div className="mb-3">
                     <label className="form-label">Mensaje</label>
-                    <input
+                    <textarea
                         value={message}
                         onChange={(e)=>setMessage(e.target.value)}
                         type="text"
                         className="form-control"
+                        maxLength="255"
+                        placeholder="Máximo 255 caracteres"
                     />
                 </div>
                 <button onClick={handleSubmit} type="submit" className="btn btn-primary">Enviar</button>

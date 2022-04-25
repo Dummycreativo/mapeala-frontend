@@ -163,6 +163,10 @@ input.form-control {
   width: 75%;
 }
 
+textarea.form-control {
+  width: 75%;
+}
+
 button.btn.btn-primary {
   background-color: rgb(31, 219, 157);
   border-color: rgb(31, 219, 157);
@@ -372,6 +376,10 @@ ul li a {
   }
 
   input.form-control {
+    width: 100%;
+  }
+
+  textarea.form-control {
     width: 100%;
   }
 
