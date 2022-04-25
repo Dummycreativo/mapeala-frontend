@@ -18,6 +18,10 @@ const CreateContact = () => {
 //Resetear y validar formulario al enviar
 function handleSubmit(e) {
     e.preventDefault();
+    console.log("Nombre:" + name);
+    console.log("Email:" + email);
+    console.log("Teléfono:" + phone);
+    console.log("Mensaje:" + message);
     if (name === '' || email === '' || phone === '' || message === '') {
         alert("Por favor, llene todos los campos");
     } else if (isNaN(phone)) {
